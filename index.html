@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FactSurveyGlobal — Visual preference survey</title>
+  <meta name="description" content="Rate photos for brands. Simple visual preference survey. See one photo at a time and tap Like or Nope. No account required." />
+  <style>
+    :root {
+      --text:#111827; --muted:#4b5563; --line:#e5e7eb;
+      --bg:#f3f4f6; --card:#fff; --accent:#4f46e5; --soft:#eef2ff;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, "Noto Sans", system-ui, sans-serif; color:var(--text); background:var(--bg); line-height:1.65; }
+    a { color:var(--accent); }
+    .wrap { max-width:960px; margin:0 auto; padding:0 22px; }
+    header { background:#0f172a; color:#fff; }
+    header .wrap { display:flex; justify-content:space-between; align-items:center; padding:16px 22px; }
+    .logo { font-weight:800; letter-spacing:.02em; font-size:15px; }
+    .logo em { font-style:normal; color:#a5b4fc; }
+    nav a { color:#cbd5e1; text-decoration:none; margin-left:16px; font-size:13px; }
+    nav a:hover { color:#fff; }
+    .hero { background:#0f172a; color:#fff; padding:56px 0 48px; }
+    .hero .wrap { display:grid; grid-template-columns:1.15fr .85fr; gap:36px; align-items:center; }
+    .kicker { font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#a5b4fc; font-weight:700; margin:0 0 12px; }
+    h1 { font-size:40px; line-height:1.12; margin:0 0 14px; }
+    .lead { color:#cbd5e1; font-size:17px; margin:0; max-width:520px; }
+    .looks { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .look { height:92px; border-radius:14px; }
+    .l1 { background:linear-gradient(135deg,#c4b5fd,#818cf8); }
+    .l2 { background:linear-gradient(135deg,#fda4af,#fb7185); }
+    .l3 { background:linear-gradient(135deg,#6ee7b7,#34d399); }
+    .l4 { background:linear-gradient(135deg,#fde68a,#f59e0b); }
+    .look-cap { grid-column:1 / -1; color:#94a3b8; font-size:12px; }
+    h2 { font-size:22px; margin:0 0 8px; }
+    h3 { font-size:16px; margin:0 0 6px; }
+    .section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px 30px; margin:18px 0 0; }
+    .muted { color:var(--muted); margin:0 0 16px; }
+    .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .tile { background:#f8fafc; border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+    .tile p { margin:0; color:var(--muted); font-size:14px; }
+    .num { display:block; width:28px; height:28px; border-radius:50%; background:var(--soft); color:var(--accent); font-weight:700; font-size:13px; text-align:center; line-height:28px; margin-bottom:8px; }
+    ul { margin:8px 0 0; padding-left:18px; color:var(--muted); }
+    li { margin:5px 0; }
+    .contact-row { display:flex; gap:28px; flex-wrap:wrap; }
+    .contact-row p { margin:4px 0; color:var(--muted); }
+    footer { color:#94a3b8; font-size:13px; padding:28px 0 48px; }
+    footer a { color:#64748b; text-decoration:none; margin-right:14px; }
+    @media (max-width:760px) {
+      .hero .wrap, .grid3, .grid2 { grid-template-columns:1fr; }
+      h1 { font-size:30px; }
+      nav { display:none; }
+      .hero { padding:36px 0 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="logo">FactSurvey<em>Global</em></div>
+      <nav>
+        <a href="#product">Product</a>
+        <a href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Available on Google Play · Art &amp; Design</p>
+        <h1>Rate photos for brands. Simple visual preference survey.</h1>
+        <p class="lead">You see one photo at a time — a product, a room or a scene — and tap Like or Nope. Your choices stay on the device. No account.</p>
+      </div>
+      <div class="looks" aria-hidden="true">
+        <div class="look l1"></div>
+        <div class="look l2"></div>
+        <div class="look l3"></div>
+        <div class="look l4"></div>
+        <div class="look-cap">One look · Like or Nope</div>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section class="section" id="product">
+      <h2>What you can do</h2>
+      <p class="muted">FactSurveyGlobal is a simple visual preference survey. Brands need a quick read on which looks feel right. Like and Nope are preference taps only. There is no right or wrong answer.</p>
+      <div class="grid3">
+        <div class="tile"><h3>View one photo at a time</h3><p>Each screen shows a single look from the app photo set.</p></div>
+        <div class="tile"><h3>Tap Like or Nope</h3><p>Tell us whether the look works, then move to the next photo.</p></div>
+        <div class="tile"><h3>No account needed</h3><p>Use the app without creating an account. Progress stays on the device.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <h2>How it works</h2>
+      <p class="muted">FactSurveyGlobal loads a photo set and stores your progress on the device. Photos are part of the app content. The app does not read your camera or gallery.</p>
+      <div class="grid3">
+        <div class="tile"><span class="num">1</span><h3>Open the app</h3><p>A photo set loads. You do not upload personal photos.</p></div>
+        <div class="tile"><span class="num">2</span><h3>Tap a preference</h3><p>Like or Nope. The choice is saved on the phone.</p></div>
+        <div class="tile"><span class="num">3</span><h3>Continue the set</h3><p>Move through looks at your own pace.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="ads">
+      <h2>Ads</h2>
+      <p class="muted">The app may show rewarded video and interstitial ads in later sessions. You can reset your advertising ID in Android settings. FactSurveyGlobal is built for visual feedback, not for banking.</p>
+    </section>
+
+    <section class="section" id="privacy">
+      <h2>Privacy</h2>
+      <p class="muted">No sign-up. No contacts, SMS, location or activity permission. Survey images are provided by the app.</p>
+      <ul>
+        <li>Like / Nope history is stored on the device</li>
+        <li>Clear app data or uninstall to remove local progress</li>
+        <li>Read the full policy: <a href="privacy_policy.html">Privacy Policy</a></li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-row">
+        <div>
+          <p>Support</p>
+          <p><strong>support@chalofit.club</strong></p>
+        </div>
+        <div>
+          <p>Privacy</p>
+          <p><strong>privacy@chalofit.club</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <a href="#product">Product</a>
+        <a href="#how">How it works</a>
+        <a href="privacy_policy.html">Privacy policy</a>
+        <a href="#contact">Contact</a>
+      </p>
+      <p>© 2026 FactSurveyGlobal. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
