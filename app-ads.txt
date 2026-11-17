@@ -95,3 +95,6 @@ video.unrulymedia.com, 839999282, RESELLER, 98c21ef9a666c68b
 video.unrulymedia.com, 905340553, RESELLER
 xandr.com, 13293, RESELLER, f5ab79cb980f11d1
 zetaglobal.net, 767, RESELLER
+adform.com, 3344, RESELLER, 9f5210a2f0999e32
+triplelift.com, 14927, RESELLER, 6c33edb13117fd90
+xandr.com, 15507, RESELLER, f5ab79cb980f11d1
